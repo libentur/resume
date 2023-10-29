@@ -1,0 +1,145 @@
+{
+    "introduction": {
+        "title": {
+            "ru": "Вступление",
+            "en": "Introduction"
+        },
+        "content": {
+            "ru": [
+                "Я изучаю веб-программирование на протяжении двух лет и за это время не только обрёл необходимые навыки, но и сделал несколько работ, которые эти навыки демонстрируют.",
+                "Помимо разработки бэкенда и фронтенда я испытываю интерес к дизайну (векторная графика), а потому довольно свободно пользуюсь Figma и Adobe Illustrator."
+            ],
+            "en": [
+                "I have been studying web development for two years and during this time I have not only acquired the necessary skills but have also completed several projects that demonstrate these abilities.",
+                "In addition to backend and frontend development, I have an interest in design (vector graphics), so I am quite proficient in Figma and Adobe Illustrator."
+            ]
+        }
+    },
+    "techstack": {
+        "title": {
+            "ru": "Компетенция",
+            "en": "Competence"
+        },
+        "content": [
+            {
+                "title": {
+                    "ru": "Языки",
+                    "en": "Languages"
+                },
+                "parts": "HTML, CSS (SCSS), JavaScript"
+            },
+            {
+                "title": {
+                    "ru": "Клиентская часть",
+                    "en": "Client"
+                },
+                "parts": "React, Redux"
+            },
+            {
+                "title": {
+                    "ru": "Серверная часть",
+                    "en": "Server"
+                },
+                "parts": "Node, Express"
+            },
+            {
+                "title": {
+                    "ru": "Базы данных",
+                    "en": "Database"
+                },
+                "parts": "Mongo"
+            },
+            {
+                "title": {
+                    "ru": "Утилиты",
+                    "en": "Utilities"
+                },
+                "parts": "Git / GitHub, Insomnia, Compass"
+            }
+        ]
+    },
+    "portfolio": {
+        "title": {
+            "ru": "Портфолио",
+            "en": "Portfolio"
+        },
+        "content": [
+            {
+                "title": "first",
+                "links": {
+                    "global": null,
+                    "github": null
+                },
+                "description": {
+                    "ru": "описание на русском",
+                    "en": "description in english"
+                },
+                "stack": [
+                    "1",
+                    "2",
+                    "3"
+                ]
+            },
+            {
+                "title": "second",
+                "links": {
+                    "global": null,
+                    "github": null
+                },
+                "description": {
+                    "ru": "описание на русском",
+                    "en": "description in english"
+                },
+                "stack": [
+                    "1",
+                    "2",
+                    "3"
+                ]
+            },
+            {
+                "title": "third",
+                "links": {
+                    "global": null,
+                    "github": null
+                },
+                "description": {
+                    "ru": "описание на русском",
+                    "en": "description in english"
+                },
+                "stack": [
+                    "1",
+                    "2",
+                    "3"
+                ]
+            }
+        ]
+    },
+    "hobby": {
+        "title": {
+            "ru": "Увлечение",
+            "en": "Hobby"
+        },
+        "content": {
+            "ru": [
+                "Конечно, <b>нейросети</b>. В частности, ChatGPT и Midjourney. Первая просто фантастически помогает в обучении, вторая - помогает создавать контент для собственных проектов и делает их куда интереснее визуально.",
+                "Со школьных лет мне нравится играть в <b>баскетбол</b>, но соревнования остались в прошлом.",
+                "Стал чаще <b>читать</b> публицистику, хотя раньше предпочитал зарубежную художественную литературу.",
+                "В моей квартире много <b>растений</b>, выращенных из маленького зёрнышка.",
+                "Как программисту без <b>компьютерных игр</b>? Предпочитаю стратегии и RPG, но футбол на машинках - лучшее, что придумало человечество.",
+                "Некоторое время увлекался <b>столярным ремеслом</b>, благодаря чему не только научился работе с инструментами, но и сколотил себе некоторую мебель."
+            ],
+            "en": [
+                "Naturally, <b>neural networks</b>. Specifically, ChatGPT and Midjourney. The former helps tremendously in learning, the latter aids in content creation for my own projects and makes them visually much more interesting.",
+                "Since school, I've enjoyed playing <b>basketball</b>, but competitions are a thing of the past.",
+                "I’ve started reading <b>non-fiction</b> more often, even though I used to prefer foreign fiction.",
+                "My apartment is full of <b>plants</b> grown from tiny seeds.",
+                "What programmer doesn't like <b>video games</b>? I prefer strategy and RPG, but car soccer is the pinnacle of human creation.",
+                "I spent some time getting into <b>carpentry</b>, which not only taught me how to work with tools but also resulted in some DIY furniture."
+            ]
+        }
+    },
+    "presentation": {
+        "ru": "Загрузить PDF",
+        "en": "Download PDF"
+    }
+}
