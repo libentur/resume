@@ -1,0 +1,13 @@
+@import '/src/styles/variables';
+
+.introduction {
+    p {
+        @include font;
+        @media screen and (min-width: 600px) and (max-width: 799px) {
+            font-size: 14px;
+        }
+        & + p {
+            margin-top: 15px;
+        }
+    }
+}

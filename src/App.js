@@ -1,13 +1,15 @@
-import React, { useState, useEffect } from 'react'
-import Loader from './components/Loader'
-import Left from './modules/left/Left'
-import Right from './modules/right/Right'
+import React from 'react'
+import Loader from './components/loader/loader'
+import LeftSide from './modules/left_side/left_side'
+import RightSide from './modules/right_side/right_side'
+import LOCALIZATION from './localization/localization.json'
 
 export default function App() {
-    const [isLoading, setIsLoading] = useState(true)
+    const [isLoading, setIsLoading] = React.useState(true)
     const [language, setLanguage] = React.useState('ru')
+    const localization = LOCALIZATION[language]
 
-    useEffect(() => {
+    React.useEffect(() => {
         const timer = setTimeout(() => {
             setIsLoading(false)
         }, 1200)
@@ -20,11 +22,12 @@ export default function App() {
                 <Loader />
             ) : (
                 <>
-                    <Left
+                    <LeftSide localization={localization.left_side} />
+                    <RightSide
+                        localization={localization.right_side}
                         language={language}
                         setLanguage={setLanguage}
                     />
-                    <Right language={language} />
                 </>
             )}
         </div>

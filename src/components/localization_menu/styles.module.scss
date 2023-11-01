@@ -1,0 +1,41 @@
+@import '/src/styles/variables';
+
+.localization_menu {
+    @include flex($align: center, $gap: 10px);
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    button {
+        @include border;
+        width: 40px;
+        height: 40px;
+        padding: 10px;
+        background-color: $light;
+        cursor: pointer;
+        &:before {
+            @include border;
+            content: '';
+            display: block;
+            width: 100%;
+            height: 100%;
+            opacity: 0.5;
+            transition: all 150ms ease;
+        }
+        &#en {
+            &:before {
+                background: url('./images/en.png') center/contain no-repeat;
+            }
+        }
+        &#ru {
+            &:before {
+                background: url('./images/ru.png') center/contain no-repeat;
+            }
+        }
+        &:hover:before,
+        &.active:before {
+            opacity: 1;
+        }
+    }
+}

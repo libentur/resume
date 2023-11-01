@@ -1,0 +1,16 @@
+@import '/src/styles/variables';
+
+.download {
+    @include border;
+    @include font($align: center);
+    display: block;
+    padding: 15px;
+    background-color: $light;
+    transition: all 150ms ease;
+    @media screen and (min-width: 600px) and (max-width: 799px) {
+        font-size: 14px;
+    }
+    &:hover {
+        background-color: $light_darker;
+    }
+}

@@ -1,0 +1,27 @@
+@import '/src/styles/variables';
+
+.competence {
+    > div {
+        & + div {
+            margin-top: 15px;
+            transition: all 150ms ease;
+            @media screen and (min-width: 600px) and (max-width: 799px) {
+                margin-top: 5px;
+            }
+        }
+        h3 {
+            @include font($weight: bold, $transform: uppercase);
+            display: inline-block;
+            margin-right: 10px;
+            @media screen and (min-width: 600px) and (max-width: 799px) {
+                font-size: 14px;
+            }
+        }
+        span {
+            @include font;
+            @media screen and (min-width: 600px) and (max-width: 799px) {
+                font-size: 14px;
+            }
+        }
+    }
+}

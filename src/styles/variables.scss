@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
 
 $light: hsl(200deg, 20%, 80%);
 $light_lighter: hsl(200deg, 20%, 95%);
@@ -7,37 +7,48 @@ $dark: hsla(200, 20%, 20%, 1);
 $dark_lighter: hsla(200, 20%, 50%, 1);
 $bg_gradient: linear-gradient(90deg, $dark, $dark_lighter);
 
+$global: hsl(220, 65%, 55%);
+$github: hsl(265, 40%, 60%);
+$telegram: hsl(200, 50%, 60%);
+$mail: hsl(5, 50%, 60%);
+
 @mixin font(
-    $family: 'Roboto',
+    $family: 'JetBrains Mono',
     $color: $dark,
     $size: 16px,
     $weight: normal,
-    $align: left,
-    $spacing: 0,
+    $spacing: normal,
     $transform: none,
-    $decoration: none
+    $decoration: none,
+    $align: left
 ) {
+    font-family: $family;
     color: $color;
     font-size: $size;
-    font-weight: $weight;
-    font-family: $family;
-    text-transform: $transform;
     line-height: calc($size * 1.5);
+    font-weight: $weight;
     letter-spacing: $spacing;
-    text-align: $align;
+    text-transform: $transform;
     text-decoration: $decoration;
+    text-align: $align;
 }
 @mixin flex(
+    $direction: row,
     $justify: flex-start,
     $align: flex-start,
-    $direction: row,
     $wrap: nowrap,
     $gap: 0
 ) {
     display: flex;
+    flex-direction: $direction;
     justify-content: $justify;
     align-items: $align;
-    flex-direction: $direction;
     flex-wrap: $wrap;
     gap: $gap;
+}
+
+@mixin border($border: none, $outline: none, $radius: 5px) {
+    border: $border;
+    outline: $outline;
+    border-radius: $radius;
 }

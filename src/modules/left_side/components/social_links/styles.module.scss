@@ -1,0 +1,34 @@
+@import '/src/styles/variables';
+
+.social_links {
+    z-index: 1;
+    a {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        & + a {
+            margin-left: 20px;
+        }
+        path {
+            fill: $dark;
+            transition: all 150ms ease;
+        }
+        &:hover {
+            &.github {
+                path {
+                    fill: $github;
+                }
+            }
+            &.telegram {
+                path {
+                    fill: $telegram;
+                }
+            }
+            &.mail {
+                path {
+                    fill: $mail;
+                }
+            }
+        }
+    }
+}
